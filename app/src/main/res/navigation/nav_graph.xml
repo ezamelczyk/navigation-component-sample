@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstDetailsFragment"
+        android:name="pl.ernestzamelczyk.navigationcomponentsample.FirstDetailsFragment"
+        android:label="FirstDetailsFragment" >
+        <argument
+            android:name="detailsText"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="pl.ernestzamelczyk.navigationcomponentsample.FirstFragment"
+        android:label="FirstFragment" >
+        <action
+            android:id="@+id/startFirstDetailsFragment"
+            app:destination="@id/firstDetailsFragment"/>
+    </fragment>
+</navigation>
