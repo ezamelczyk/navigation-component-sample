@@ -5,12 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.navArgs
 import kotlinx.android.synthetic.main.fragment_details.*
 
-class FirstDetailsFragment : Fragment() {
-
-    private val args: FirstDetailsFragmentArgs by navArgs()
+class FourthFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,7 +19,7 @@ class FirstDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        detailsTextView.text = args.detailsText
+        detailsTextView.text = "Fourth"
     }
 
 }
